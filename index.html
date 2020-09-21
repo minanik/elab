@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MySite</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    
+    
+
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">ELAB</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#sec1">Pocetna</a></li>
+                <li><a href="#sec2">O nama</a></li>
+                <li><a href="#sec3">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+<section id="sec1">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    <div class="banner">
+        <div class="banner-text">
+            <div class="banner-text-item">
+                <h2>ELAB</h2>
+                <p>Katedra za elektronsko poslovanje osnovana je o Vavedenju presvete Bogorodice, 4. decembra 2013. godine na Fakultetu organizacionih nauka. Vizija Katedre za elektronsko poslovanje, Fakulteta organizacionih nauka je liderstvo u obrazovnom i naučnom radu u oblastima elektronskog i mobilnog poslovanja, internet tehnologija i računarske simulacije, kao i prepoznatljivost među studentima, istraživačima i preduzećima. Privlačenjem talentovanih studenata, profesionalnim razvojem nastavnika i saradnika, i unapređenjem saradnje sa privredom, Katedra za elektronsko poslovanje ima za cilj da bude široko prepoznata kao lider i van granica Srbije.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sec2">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="main-content">
+        <div class="main1">
+                <h2>Projekti</h2>
+                <p>Katedra za elektronsko poslovanje je učestvovala u realizaciji velikog broja projekata sa privredom, državnim organima, obrazovnim i naučnim institucijama.  </p>
+        </div>
+  
+        <div class="main1">
+                <h2>Naučno istraživački radovi</h2>
+                <p>Naučno-istraživački rad Laboratorije za simulacija i Laboratorije za elektronsko poslovanje odvija se kroz realizaciju projekata iz sledećih oblasti: Elektronsko poslovanje, Računarska simulacija, Internet tehnologije, Primena računarske tehnike u fizici, Elektronsko obrazovanje, Upravljanje rizikom u razvoju informacionih sistema, Internet marketing, Društveni mediji.</p>
+        </div>
+    
+   
+        <div class="main1">
+                <h2>ELAB Moodle</h2>
+                <p>Katedra za Elektronsko poslovanje u izvođenju nastave koristi Moodle sistem za upravljanje učenjem kao ključnu komponentu za primenu koncepta Blended learning-a, tj. kombinovanje tradicionalnog i učenja na daljinu. </p>
+        </div>
+    </div>
+</section>
+<section id="sec3">
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <form>
+    <div class="contact">
+           <div class="contact-text">
+               <div class="contact-item">
+                   <h2>Kontakt</h2>
+                   <input type="text" id="name" required placeholder="Unesi ime...">
+                   <input type="email" id="email" required placeholder="Unesi email ...">
+                   <textarea cols="20" rows="20" id="message" required placeholder="Unesi poruku..."></textarea>
+                   <button onclick="store()" type="submit">Pošalji</button>
+               </div>
+           </div>
+          </div>
+        </form>  
+        </section>
+
+
+</body>
+
+<script type="text/javascript">
+    function store(){
+        var inputName= document.getElementById("name");
+        var inputEmail= document.getElementById("email");
+        var inputMessage= document.getElementById("message");
+
+        localStorage.setItem("name", inputName.value);
+        console.log(localStorage.getItem("name"))
+        
+        
+        localStorage.setItem("email", inputEmail.value);
+        console.log(localStorage.getItem("email"))
+        
+        
+        localStorage.setItem("message", inputMessage.value);
+        console.log(localStorage.getItem("message"))
+        }
+</script>
+
+</html>
